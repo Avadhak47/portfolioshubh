@@ -1,0 +1,73 @@
+.front{
+    background-image: url('https://cdn.wallpapersafari.com/99/51/r6uNot.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -7.2rem;
+}
+
+.profile-container{
+    margin: 1rem;
+    padding: 5rem 0 1rem 0;
+    display: flex;
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+}
+.profile-details{
+    margin: 0.5rem;
+    max-width: 75%;
+}
+
+.profile-name{
+    margin: 2%;
+}
+.heightlighted-text{
+    color: rgb(42, 136, 230);
+}
+.prifile-role{
+    margin: 2%;
+}
+
+.btn{
+    margin: 2%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    color:aliceblue;  
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.btn-lightdark{
+    background-color: rgb(102, 101, 101);
+}
+.btn-lightdark:hover{
+    background-color: rgb(69, 68, 68);
+}
+.btn-blue{
+    background-color: rgb(42, 136, 230);
+}
+.btn-blue:hover{
+    background-color: rgb(30, 109, 189);
+}
+
+.profile-container>img{
+    width: 40%;
+    margin: 1%;
+}
+
+@media screen and (max-width: 700px) {
+    .profile-container{
+        flex-direction: column-reverse;
+    }
+    .profile-details{
+        width: 90%;
+    }
+    .profile-container>img{
+        max-width: 20rem;
+        width: 90%;
+    }
+}
