@@ -2,6 +2,7 @@ import React from 'react';
 import frontimg from "../assestes/bglogo.png";
 import { Link } from 'react-router-dom';
 import About from './About';
+import Contact from './Contact';
 
 function Home() {
     return (
@@ -31,6 +32,7 @@ function Home() {
             </div>
         </div>
         <About />
+        <Contact />
         </>
     )
 }
