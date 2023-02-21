@@ -1,10 +1,11 @@
 .contactbg{
-    margin-top: 1rem;
-    padding: 1rem;
+    padding: 4rem 1rem 1rem 1rem;
+    /* padding: 1rem; */
     color: aliceblue;
     font-size: 20px;
     font-weight: 400;
 }
+
 .contact-text{
     text-align: center;
     margin: auto auto;
