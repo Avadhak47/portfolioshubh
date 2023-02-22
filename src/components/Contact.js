@@ -36,7 +36,7 @@ function Contact() {
                         <input type="text" name="Name" id="name" placeholder='Your Name' />
                         <input type="email" name="email" id="email" placeholder='Your E-Mail Address' />
                         <textarea name="message" id="message" cols="30" rows="10" placeholder='Your Message'></textarea>
-                        <button className="btn">Send Messager</button>
+                        <button className="btn btn-lightdark">Send Message</button>
                     </form>
                 </div>
             </div>

@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path="/about" element={<About/>} />
         <Route exact path='/contactme' element={<Contact />} />
+        <Route exact path='/services' element={<Services/>} />
       </Routes>
-      
+      <Footer />
     </Router>
   );
 }

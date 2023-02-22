@@ -35,9 +35,9 @@ function Navbar() {
                 <Link to="/" className="link">Home</Link>
                 <Link to="/about" className="link">About</Link>
                 <Link to="/" className="link">Skills</Link>
-                <Link to="/" className="link">Services</Link>
+                <Link to="/services" className="link">Services</Link>
                 <Link to="/" className="link">Education</Link>
-                <Link to="/" className="link">Services</Link>
+                <Link to="/contactme" className="link">Contact Me</Link>
                 <Link to="/" className='link'>Project Details</Link>
                 <div className="icon">
                     <a href="/"><GitHubIcon /></a>
