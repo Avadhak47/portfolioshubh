@@ -8,15 +8,17 @@
     padding-bottom: 10rem;
 }
 
-.outercontainer>h1{
-    margin: 2rem 0 3rem 0;
+.service-outer-text{
+    margin: 2rem 0 2rem 0;
     color: aliceblue;
+    font-size: 18px;
+}
+.service-outer-text>h1{
+    margin-bottom: 0.5rem;
 }
 
 .service-details{
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 18px;
     font-weight: 400;
 }
@@ -27,7 +29,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     padding: 1rem;
     margin: 1rem;
     background-color: aliceblue;

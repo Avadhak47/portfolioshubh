@@ -24,7 +24,9 @@
     margin: 2%;
 }
 .heightlighted-text{
-    color: rgb(42, 136, 230);
+    color: rgb(27, 93, 158);
+    text-shadow: 1.3px 0.5px black;
+    font-weight: bold;
 }
 .prifile-role{
     margin: 2%;

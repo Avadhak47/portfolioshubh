@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import Services from './Services';
+import Education from './Education';
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
                         <div className="profile-name">
                             <span>Hii There<br /></span>
                             <span>I'm </span>
-                            <span className='heightlighted-text'>SHUBHAM TANWAR</span>
+                            <h2 className='heightlighted-text'>SHUBHAM TANWAR</h2>
                         </div>
                         <div className="prifile-role">
                             <span>and I'm a <br />
@@ -34,6 +35,7 @@ function Home() {
         </div>
         <About />
         <Services />
+        <Education />
         <Contact />
         </>
     )
