@@ -7,6 +7,7 @@ import Services from './Services';
 import Education from './Education';
 
 function Home() {
+
     return (
         <>
         <div className="homepage">
@@ -25,7 +26,7 @@ function Home() {
                                 And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</span>
                         </div>
                         <div className='profile-options'>
-                            <Link to="/"><button className='btn btn-lightdark'>contact Me</button></Link>
+                            <Link to="/contactme"><button className='btn btn-lightdark'>contact Me</button></Link>
                             <Link to="/"><button className='btn btn-blue'>Get Resume</button></Link>
                         </div>
                     </div>

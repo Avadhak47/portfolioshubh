@@ -4,8 +4,37 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 function Footer() {
+
+
+
+
+    window.addEventListener('scroll', (event) => {
+        let tatbun = document.getElementsByClassName("btn").length;
+        let toUp = document.getElementsByClassName("btn")[tatbun - 1].firstChild;
+
+        if (window.pageYOffset !== undefined) {
+            if (window.pageYOffset > 75) {
+                toUp.style.color = "rgb(30, 109, 189)";
+                toUp.style.display="block";
+            }
+            else {
+                toUp.style.color = "transparent";
+                toUp.style.display="none";
+            }
+        }
+        else
+            toUp.style.color = "transparent";
+    });
+    const scroller = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
     return (
         <div className='footercontainer'>
             <div className='footercontent'>
@@ -17,8 +46,11 @@ function Footer() {
                 </div>
                 <div className='copyrights'>
                     <h3>Thank You</h3>
+                    <h3>Copyright @ shubham</h3>
                 </div>
             </div>
+            <button onClick={scroller} className="btn"><KeyboardDoubleArrowUpIcon id="scroll-up" /></button>
+
         </div>
     )
 }

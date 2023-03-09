@@ -1,6 +1,7 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
+import icon from "../assestes/icon.png";
 
 function Navbar() {
 
@@ -18,7 +19,20 @@ function Navbar() {
 
         }
     })
+    const links = document.querySelectorAll('.link');
 
+    if (links!==undefined) {
+        console.log(links);
+        links.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                links.forEach((link) => {
+                    link.classList.remove('active');
+                });
+                e.preventDefault();
+                link.classList.add('active');
+            });
+        });
+    }
 
     return (
         <div className='navbar'>
@@ -27,7 +41,7 @@ function Navbar() {
                 <span></span>
             </label>
             <Link to='/' className="navlogo">
-                <img src="https://www.zarla.com/images/zarla-s-1x1-2400x2400-20211119-wwrwkmmjcm7hh3wfkvcc.png?crop=1:1,smart&width=250&dpr=2" alt="namelogo" />
+                <img src={icon} alt="namelogo" />
                 <h3>Shubham Tanwar</h3>
             </Link>
 
@@ -40,7 +54,7 @@ function Navbar() {
                 <Link to="/contactme" className="link">Contact Me</Link>
                 <Link to="/" className='link'>Project Details</Link>
                 <div className="icon">
-                    <a href="/"><GitHubIcon /></a>
+                    <a href="https://github.com/Shubh404-SE" target="blank"><GitHubIcon /></a>
                 </div>
             </div>
         </div>

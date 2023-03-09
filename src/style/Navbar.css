@@ -1,3 +1,6 @@
+.active{
+    color: #aaaaaa;
+}
 .navbar {
     /* display: block; */
     display: flex;
@@ -41,6 +44,10 @@
     color: aliceblue;
     margin-right: 25px;
     text-decoration: none;
+}
+
+.link:active{
+    color: aqua;
 }
 
 .link:hover {
@@ -162,10 +169,6 @@
         position: absolute;
         top: auto auto;
         right: 0;
-    }
-
-    .navlinks{
-        font-size: 100%;
     }
 
 }
