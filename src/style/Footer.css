@@ -34,7 +34,7 @@
     height: 50px;
     margin: 10px;
     cursor: pointer;
-    transition: all 0.3s ease-out;
+    transition: all 1s ease-out;
 }
 .socialmedialinks>a{
     text-decoration: none;

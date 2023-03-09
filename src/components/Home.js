@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Services from './Services';
 import Education from './Education';
+import img from "../assestes/icon.png";
 
 function Home() {
 
@@ -27,7 +28,8 @@ function Home() {
                         </div>
                         <div className='profile-options'>
                             <Link to="/contactme"><button className='btn btn-lightdark'>contact Me</button></Link>
-                            <Link to="/"><button className='btn btn-blue'>Get Resume</button></Link>
+                            {/* <a href={img} download><button className='btn btn-blue'>Get Resume</button></a> */}
+                            <a href='#'><button className='btn btn-blue'>Get Resume</button></a>
                         </div>
                     </div>
                     <img src={frontimg} alt="image" />

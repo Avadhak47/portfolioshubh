@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../style/Contact.css';
 
 function Contact() {
+    const form = useRef();
+
+
+
+
+
+
+    const sendEmail = (e) => {
+        e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+        emailjs.sendForm('service_dmh87do', 'template_t6u9039', form.current, 'l8CKqWZsVo7vYAaty')
+            .then((result) => {
+                console.log("done");
+            }, (error) => {
+                console.log("error");
+            });
+    };
+
     return (
         <div className='front contactbg'>
             <div className='contact-text'>
@@ -32,11 +51,12 @@ function Contact() {
                     <div className="contenttext formtext">
                         <h2>Send message</h2>
                     </div>
-                    <form action="#">
+                    {/* add a lable so that whenever a massage send  a banner showing your msg sent success..*/}
+                    <form ref={form} onSubmit={sendEmail}>
                         <input type="text" name="Name" id="name" placeholder='Your Name' />
                         <input type="email" name="email" id="email" placeholder='Your E-Mail Address' />
                         <textarea name="message" id="message" cols="30" rows="10" placeholder='Your Message'></textarea>
-                        <button className="btn btn-lightdark">Send Message</button>
+                        <button type='submit' value='send' className="btn btn-lightdark">Send Message</button>
                     </form>
                 </div>
             </div>
