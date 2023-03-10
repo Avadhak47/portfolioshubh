@@ -1,0 +1,143 @@
+.skillcintainer{
+  width:auto;
+  background-color: rgb(115, 196, 220);
+  margin-top: -7.3rem;
+  padding: 6rem 0 5rem 0;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie-wrap {
+  width: 400px;
+  height: 400px;
+  margin: 10% 50px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  color: black;
+}
+
+.pie-wrap .entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the individual entries */
+.sky-blue {
+  background-color: lightskyblue;
+  height: 50%;
+  width: 50%;
+  display: block;
+}
+
+.light-yellow {
+  background-color: lightyellow;
+  height: 50%;
+  width: 50%;
+}
+
+.pink {
+  background-color: pink;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+
+.purple {
+  background-color: purple;
+  height: 50%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+.green {
+  background-color: limegreen;
+  height: 50%;
+  width: 50%;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.wheat {
+  background-color: wheat;
+  height: 50%;
+  width: 50%;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 200%);
+}
+
+/* the entry text styles */
+.pie-wrap .purple p {
+  position: absolute;
+  top: 140px;
+  color: white;
+}
+
+.pie-wrap .purple p:first-child {
+  top: 120px;
+}
+
+.pie-wrap .green p {
+  position: absolute;
+  top: 20px;
+}
+
+.pie-wrap .green p:first-child {
+  top: 0px;
+}
+
+.pie-wrap .pink p,
+.pie-wrap .wheat p {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+}
+
+.pie-wrap .pink,
+.pie-wrap .wheat {
+  justify-content: flex-start;
+}
+
+.pie-wrap .pink p:first-child,
+.pie-wrap .wheat p:first-child {
+  top: 100px;
+}
+
+/* hide food name and reveal when hovered on */
+.entry .entry-value {
+  display: none;
+  transition: all 500ms linear;
+}
+
+.entry:hover .entry-value {
+  display: block;
+}
+
+.entry {
+  transition: all 800ms linear;
+}
+
+.entry:hover {
+  filter: invert();
+}

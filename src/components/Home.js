@@ -5,7 +5,8 @@ import About from './About';
 import Contact from './Contact';
 import Services from './Services';
 import Education from './Education';
-import img from "../assestes/icon.png";
+// import img from "../assestes/icon.png";
+import Skill from './Skill';
 
 function Home() {
 
@@ -37,6 +38,7 @@ function Home() {
             </div>
         </div>
         <About />
+        <Skill />
         <Services />
         <Education />
         <Contact />

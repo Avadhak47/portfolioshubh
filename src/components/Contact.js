@@ -28,7 +28,7 @@ function Contact() {
                 <p>For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email contact@domain.com</p>
             </div>
             <div className="contactdetail">
-                <div className='contactmethods'>
+                {/* <div className='contactmethods'>
                     <div className="contactaddress">
                         <h2 className='heightlighted-text'>Address</h2>
                         <p>Nawa City 341507<br /></p>
@@ -46,7 +46,7 @@ function Contact() {
                         <h2 className='heightlighted-text'>WhatsApp</h2>
                         <p>+911023456789</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="formlayout">
                     <div className="contenttext formtext">
                         <h2>Send message</h2>

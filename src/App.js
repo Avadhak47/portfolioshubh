@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import Education from './components/Education';
+import Skill from './components/Skill';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route exact path='/skills' element={<Skill />} />
         <Route exact path="/about" element={<About/>} />
         <Route exact path='/contactme' element={<Contact />} />
         <Route exact path='/services' element={<Services/>} />
