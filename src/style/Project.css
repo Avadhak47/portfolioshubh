@@ -21,7 +21,9 @@
 .project_container>a>img:hover{
     transform: scale(1.05);
 }
-
+a{
+    color: aliceblue;
+}
 @media screen and (max-width: 600px) {
     .project_container{
         min-height: fit-content;
