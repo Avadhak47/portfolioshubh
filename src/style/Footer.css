@@ -14,7 +14,7 @@
     border: none;
 }
 
-.footercontainer>button>svg{
+/* .footercontainer>button>svg{
     position: fixed;
     top: 90%;
     right: 2%;
@@ -23,6 +23,17 @@
     color: transparent;
     transition: all 0.3S ease-in-out;
     display: none;
+} */
+.footercontainer>button>img{
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    transition: all 0.3S ease-in-out;
+    display: none;
+    border-radius: 50%;
 }
 
 .footercontent{
@@ -34,12 +45,22 @@
     height: 50px;
     margin: 10px;
     cursor: pointer;
-    transition: all 1s ease-out;
+    transition: all 500ms ease-out;
 }
 .socialmedialinks>a{
     text-decoration: none;
     color: aliceblue;
 }
-.socialmedialinks svg:hover{
+.twt svg:hover{
     color: rgb(30, 109, 189);
+}
+.fb svg:hover{
+    color: blue;
+}
+.yt svg:hover{
+    color: red;
+}
+.insta svg:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 15px;
 }

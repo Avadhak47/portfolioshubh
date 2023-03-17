@@ -39,17 +39,19 @@ function Footer() {
         <div className='footercontainer'>
             <div className='footercontent'>
                 <div className="socialmedialinks">
-                    <a href="/"><FacebookIcon /></a>
-                    <a href="/"><TwitterIcon /></a>
-                    <a href="/"><InstagramIcon /></a>
-                    <a href="/"><YouTubeIcon /></a>
+                    <a href="/" className='fb'><FacebookIcon /></a>
+                    <a href="/" className='twt'><TwitterIcon /></a>
+                    <a href="/" className='insta'><InstagramIcon /></a>
+                    <a href="/" className='yt'><YouTubeIcon /></a>
                 </div>
                 <div className='copyrights'>
                     <h3>Thank You</h3>
                     <h3>Copyright @ shubham</h3>
                 </div>
             </div>
-            <button onClick={scroller} className="btn"><KeyboardDoubleArrowUpIcon id="scroll-up" /></button>
+            {/* <button onClick={scroller} className="btn"><KeyboardDoubleArrowUpIcon id="scroll-up" /></button> */}
+            <button onClick={scroller} className="btn"><img src="https://media.tenor.com/LUNANcnXLiUAAAAC/up-arrow.gif" alt="img" /></button>
+            
 
         </div>
     )
