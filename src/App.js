@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Services from './components/Services';
 import Education from './components/Education';
 import Skill from './components/Skill';
+import ProjectDetail from './components/ProjectDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/about" element={<About/>} />
         <Route exact path='/contactme' element={<Contact />} />
         <Route exact path='/services' element={<Services/>} />
+        <Route exact path='/projectdetails' element={<ProjectDetail/>}> </Route>
         <Route exact path='/educationqualifications' element={<Education />}></Route>
       </Routes>
       <Footer />

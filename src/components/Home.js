@@ -7,6 +7,7 @@ import Services from './Services';
 import Education from './Education';
 // import img from "../assestes/icon.png";
 import Skill from './Skill';
+import ProjectDetail from './ProjectDetail';
 
 function Home() {
 
@@ -40,6 +41,7 @@ function Home() {
         <About />
         <Skill />
         <Services />
+        <ProjectDetail/>
         <Education />
         <Contact />
         </>

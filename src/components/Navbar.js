@@ -22,7 +22,7 @@ function Navbar() {
     const links = document.querySelectorAll('.link');
 
     if (links!==undefined) {
-        console.log(links);
+        // console.log(links);
         links.forEach((link) => {
             link.addEventListener('click', (e) => {
                 links.forEach((link) => {
@@ -52,7 +52,7 @@ function Navbar() {
                 <Link to="/services" className="link">Services</Link>
                 <Link to="/educationqualifications" className="link">Education</Link>
                 <Link to="/contactme" className="link">Contact Me</Link>
-                <Link to="/" className='link'>Project Details</Link>
+                <Link to="/projectdetails" className='link'>Project Details</Link>
                 <div className="icon">
                     <a href="https://github.com/Shubh404-SE" target="blank"><GitHubIcon /></a>
                 </div>
