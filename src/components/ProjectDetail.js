@@ -8,7 +8,7 @@ function ProjectDetail() {
   return (
     <div className='projects_container'>
       {ProjectList.map((val, index)=>{
-        console.log(val);
+        {/* console.log(val); */}
         return(<Project imglink={val.img} url={val.url} key={index} />)
         
       })}

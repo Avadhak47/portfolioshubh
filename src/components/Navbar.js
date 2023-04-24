@@ -5,7 +5,6 @@ import icon from "../assestes/icon.png";
 
 function Navbar() {
 
-
     window.addEventListener('scroll', (event) => {
         let navbar = document.getElementsByClassName("navbar");
 

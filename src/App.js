@@ -13,6 +13,7 @@ import Skill from './components/Skill';
 import ProjectDetail from './components/ProjectDetail';
 
 function App() {
+
   return (
     <Router>
       <Navbar />
