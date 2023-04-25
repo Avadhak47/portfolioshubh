@@ -38,7 +38,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    
+    transition: all ease-in-out 1s;
     border-radius: 10px;
 }
 
