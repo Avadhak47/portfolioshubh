@@ -2,11 +2,11 @@
     background-image: url('https://cdn.wallpapersafari.com/99/51/r6uNot.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: -7.2rem;
+    margin-top: -8rem;
 }
 
 .profile-container{
-    margin-top: -8rem;
+    margin-top: 1rem;
     padding: 5rem 0 1rem 0;
     display: flex;
     color: aliceblue;
@@ -15,6 +15,20 @@
     align-items: center;
     text-align: center;
 }
+.profile-container>img{
+    position: relative;
+    top: 0;
+    right: 20px;
+    animation: anini 6s linear;
+}
+
+@keyframes anini {
+    50%{
+        right: 5px;
+        top: -10px;
+    }
+}
+
 .profile-details{
     margin: 0.5rem;
     max-width: 75%;
