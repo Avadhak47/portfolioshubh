@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import icon from "../assestes/icon.png";
 
+import { VscChromeClose } from 'react-icons/vsc';
+import { SlMenu } from 'react-icons/sl';
+
+
+const navlinks = [
+    { title: "Home", path: "/" },
+    { title: "About", path: "/about" },
+    { title: "skills", path: "/skills" },
+    { title: "Education", path: "/educationqualifications" },
+    { title: "ContactMe", path: "/contactme" },
+    { title: "ProjectDetails", path: "/projectdetails" },
+]
+
 function Navbar() {
+    const [mobileMenu, setmobileMenu] = useState();
+    const [show, setshow] = useState("hide");
+
 
     window.addEventListener('scroll', (event) => {
         let navbar = document.getElementsByClassName("navbar");
@@ -15,47 +31,41 @@ function Navbar() {
             else {
                 navbar[0].style.background = "transparent";
             }
-
         }
     })
-    const links = document.querySelectorAll('.link');
 
-    if (links!==undefined) {
-        // console.log(links);
-        links.forEach((link) => {
-            link.addEventListener('click', (e) => {
-                links.forEach((link) => {
-                    link.classList.remove('active');
-                });
-                e.preventDefault();
-                link.classList.add('active');
-            });
-        });
+    const openMobileMenu = () => {
+        setmobileMenu(true);
+        setshow("show");
+        console.log("hello");
+    }
+    const closemobileMenue = () => {
+        setmobileMenu(false);
+        setshow("hide");
     }
 
     return (
         <div className='navbar'>
-            <input id="menu__toggle" type="checkbox" />
-            <label className="menu__btn" htmlFor="menu__toggle">
-                <span></span>
-            </label>
             <Link to='/' className="navlogo">
                 <img src={icon} alt="namelogo" />
-                <h3>Shubham Tanwar</h3>
+                <h3>hubham Tanwar</h3>
             </Link>
 
-            <div className='navlinks'>
-                <Link to="/" className="link">Home</Link>
-                <Link to="/about" className="link">About</Link>
-                <Link to="/skills" className="link">Skills</Link>
-                <Link to="/services" className="link">Services</Link>
-                <Link to="/educationqualifications" className="link">Education</Link>
-                <Link to="/contactme" className="link">Contact Me</Link>
-                <Link to="/projectdetails" className='link'>Project Details</Link>
+            <div className={`linkouter ${show}`} onClick={closemobileMenue}>  </div>
+
+            <div className={`navlinks ${show}`}>
+                {navlinks.map((val, index) => (
+                    <NavLink key={index} onClick={closemobileMenue} to={val.path} className="link">{val.title}</NavLink>
+                ))}
                 <div className="icon">
                     <a href="https://github.com/Shubh404-SE" target="blank"><GitHubIcon /></a>
                 </div>
             </div>
+            {mobileMenu ? (
+                <VscChromeClose id='menu__toggle' onClick={closemobileMenue} />
+            ) : (
+                <SlMenu id='menu__toggle' onClick={openMobileMenu} />
+            )}
         </div>
     )
 }

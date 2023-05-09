@@ -28,7 +28,7 @@ function Education() {
                         <img src={jnulogo} alt="#" />
                         <p>2020-Present</p>
                     </div>
-                    <p>Continueing my Graduation in B.TECH in computer science and engineering at SCHOOL OF ENGINEERING JNU DELHI with a CGPA of 6.29 with high knowledge and expreiencex </p>
+                    <p>Continueing my Graduation in B.TECH in computer science and engineering at SCHOOL OF ENGINEERING JNU DELHI with current SGPA of 7.0 with high knowledge and expreiencex </p>
                 </div>
             </div>
 
