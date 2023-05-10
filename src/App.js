@@ -6,7 +6,7 @@ import './components/Pages/Home/Home.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Pages/Home/Home';
-import About from './components/About';
+import About from './components/Pages/About/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Services from './components/Services';
