@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { NavLink, Link } from 'react-router-dom';
-import icon from "../../../assestes/icon.png";
+import icon from "../../assestes/icon.png";
 
 import { VscChromeClose } from 'react-icons/vsc';
 import { SlMenu } from 'react-icons/sl';

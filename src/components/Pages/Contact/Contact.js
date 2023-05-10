@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
-import Alert from '../Alert/Alert';
+import Alert from '../../Alert/Alert';
 
 function Contact() {
     const [showaltr, isaltr] = useState(false);
