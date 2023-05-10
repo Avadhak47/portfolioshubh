@@ -1,8 +1,8 @@
-import hltcoch from "../assestes/healthCochweb.png";
-import gusnum from "../assestes/guessnumber.png";
-import eshop from "../assestes/Eshop.png";
-import ctnmg from "../assestes/contactmanager.png";
-import movox from '../assestes/movoxbanner.png';
+import hltcoch from "../../../assestes/healthCochweb.png";
+import gusnum from "../../../assestes/guessnumber.png";
+import eshop from "../../../assestes/Eshop.png";
+import ctnmg from "../../../assestes/contactmanager.png";
+import movox from '../../../assestes/movoxbanner.png';
 const ProjectList =[
     {img: hltcoch, url:"https://healthcoachpremium.netlify.app"},
     {img:gusnum, url:"https://guess-my-number-now.netlify.app"},

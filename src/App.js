@@ -12,7 +12,7 @@ import Footer from './components/Pages/Footer/Footer';
 import Services from './components/Pages/Skill_Service/Services';
 import Education from './components/Education';
 import Skill from './components/Pages/Skill_Service/Skill';
-import ProjectDetail from './components/ProjectDetail';
+import ProjectDetail from './components/Pages/Project/ProjectDetail';
 
 function App() {
 

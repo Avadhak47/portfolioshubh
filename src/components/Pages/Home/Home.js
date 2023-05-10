@@ -8,7 +8,7 @@ import Contact from '../../Contact';
 import Services from '../Skill_Service/Services';
 import Education from '../../Education';
 import Skill from '../Skill_Service/Skill';
-import ProjectDetail from '../../ProjectDetail';
+import ProjectDetail from '../Project/ProjectDetail';
 
 function Home() {
     const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import React from 'react';
-import ProjectList from '../components/ProjectList.js';
+import ProjectList from './ProjectList.js';
 import Project from './Project.js';
-import "../style/Project.css";
+import "./Project.css";
 
 function ProjectDetail() {
 
