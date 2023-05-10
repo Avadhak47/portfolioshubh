@@ -4,7 +4,7 @@ import myimage from '../../../assestes/myphotoHome.png';
 import svgbg from '../../../assestes/blob (2).svg';
 import { useNavigate } from 'react-router-dom';
 import About from '../About/About';
-import Contact from '../../Contact';
+import Contact from '../Contact/Contact';
 import Services from '../Skill_Service/Services';
 import Education from '../../Education';
 import Skill from '../Skill_Service/Skill';
