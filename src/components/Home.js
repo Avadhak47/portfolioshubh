@@ -31,7 +31,7 @@ function Home() {
                         </div>
                         <div className='profile-options'>
                             <button className='btn btn-lightdark' onClick={()=>navigate('/contactme')}>contact Me</button>
-                            <a href='#'><button className='btn btn-blue'>Get Resume</button></a>
+                            <a href='src\assestes\Resume.pdf' download><button className='btn btn-blue'>Get Resume</button></a>
                         </div>
                     </div>
                     <div className="img_section">
