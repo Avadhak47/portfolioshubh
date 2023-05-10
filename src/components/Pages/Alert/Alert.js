@@ -1,4 +1,4 @@
-import "../style/Alert.css";
+import "./Alert.css";
 export default function Alert(props) {
     const [name, email] = props.alert;
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style/Education.css';
-import vidyabharti from '../assestes/vidyabhartiinstitute.jpeg';
-import princeschool from '../assestes/princeschoollogo.jpeg';
-import jnulogo from '../assestes/jnulogo.png';
+import './Education.css';
+import vidyabharti from '../../../assestes/vidyabhartiinstitute.jpeg';
+import princeschool from '../../../assestes/princeschoollogo.jpeg';
+import jnulogo from '../../../assestes/jnulogo.png';
 
 function Education() {
     return (

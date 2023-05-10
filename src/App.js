@@ -10,7 +10,7 @@ import About from './components/Pages/About/About';
 import Contact from './components/Pages/Contact/Contact';
 import Footer from './components/Pages/Footer/Footer';
 import Services from './components/Pages/Skill_Service/Services';
-import Education from './components/Education';
+import Education from './components/Pages/Education/Education';
 import Skill from './components/Pages/Skill_Service/Skill';
 import ProjectDetail from './components/Pages/Project/ProjectDetail';
 
