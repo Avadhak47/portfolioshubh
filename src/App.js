@@ -8,7 +8,7 @@ import Navbar from './components/Pages/Navbar/Navbar';
 import Home from './components/Pages/Home/Home';
 import About from './components/Pages/About/About';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Footer from './components/Pages/Footer/Footer';
 import Services from './components/Pages/Skill_Service/Services';
 import Education from './components/Education';
 import Skill from './components/Pages/Skill_Service/Skill';
