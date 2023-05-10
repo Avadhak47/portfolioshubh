@@ -1,10 +1,10 @@
 import './App.css';
-import './style/Navbar.css';
+import './components/Pages/Navbar/Navbar.css';
 import './components/Pages/Home/Home.css';
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/Pages/Navbar/Navbar';
 import Home from './components/Pages/Home/Home';
 import About from './components/Pages/About/About';
 import Contact from './components/Contact';
