@@ -5,9 +5,9 @@ import svgbg from '../../../assestes/blob (2).svg';
 import { useNavigate } from 'react-router-dom';
 import About from '../About/About';
 import Contact from '../../Contact';
-import Services from '../../Services';
+import Services from '../Skill_Service/Services';
 import Education from '../../Education';
-import Skill from '../../Skill';
+import Skill from '../Skill_Service/Skill';
 import ProjectDetail from '../../ProjectDetail';
 
 function Home() {

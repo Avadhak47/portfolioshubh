@@ -9,9 +9,9 @@ import Home from './components/Pages/Home/Home';
 import About from './components/Pages/About/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Services from './components/Services';
+import Services from './components/Pages/Skill_Service/Services';
 import Education from './components/Education';
-import Skill from './components/Skill';
+import Skill from './components/Pages/Skill_Service/Skill';
 import ProjectDetail from './components/ProjectDetail';
 
 function App() {

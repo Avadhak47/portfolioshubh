@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/Skill.css";
+import "./Skill.css";
 import Lang from './SkillLan';
 import Skill_item from './Skill_item';
 

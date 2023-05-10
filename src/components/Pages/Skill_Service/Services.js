@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Services.css';
+import './Services.css';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
