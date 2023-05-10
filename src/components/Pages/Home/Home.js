@@ -1,14 +1,14 @@
 import React from 'react';
 // import frontimg from "../assestes/bglogo.png";
-import myimage from '../assestes/myphotoHome.png';
-import svgbg from '../assestes/blob (2).svg';
+import myimage from '../../../assestes/myphotoHome.png';
+import svgbg from '../../../assestes/blob (2).svg';
 import { useNavigate } from 'react-router-dom';
-import About from './About';
-import Contact from './Contact';
-import Services from './Services';
-import Education from './Education';
-import Skill from './Skill';
-import ProjectDetail from './ProjectDetail';
+import About from '../../About';
+import Contact from '../../Contact';
+import Services from '../../Services';
+import Education from '../../Education';
+import Skill from '../../Skill';
+import ProjectDetail from '../../ProjectDetail';
 
 function Home() {
     const navigate = useNavigate();

@@ -1,9 +1,11 @@
 import './App.css';
 import './style/Navbar.css';
-import './style/Home.css';
-import Navbar from './components/Navbar';
+import './components/Pages/Home/Home.css';
+
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Home from './components/Pages/Home/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
