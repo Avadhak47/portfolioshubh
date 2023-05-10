@@ -1,11 +1,18 @@
 .projects_container{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 .project_container{
-    background-color: rgb(44, 54, 89);
+    background-color: #26293c;
     width: 35rem;
     height:fit-content;
     min-height: 23rem;

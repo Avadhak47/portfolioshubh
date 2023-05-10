@@ -7,6 +7,9 @@
     font-family: 'Shantell Sans', cursive;
     text-decoration: none;
 }
+.gradiant{
+    height: 4.8rem;
+}
 body{
-    background-color: rgb(66, 70, 90);
+    background-color: rgb(59, 68, 114);
 }

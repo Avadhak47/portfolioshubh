@@ -1,15 +1,17 @@
 import React from 'react';
-import frontimg from "../assestes/bglogo.png";
-import { Link } from 'react-router-dom';
+// import frontimg from "../assestes/bglogo.png";
+import myimage from '../assestes/myphotoHome.png';
+import svgbg from '../assestes/blob (2).svg';
+import { useNavigate } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import Services from './Services';
 import Education from './Education';
-// import img from "../assestes/icon.png";
 import Skill from './Skill';
 import ProjectDetail from './ProjectDetail';
 
 function Home() {
+    const navigate = useNavigate();
 
     return (
         <>
@@ -28,11 +30,14 @@ function Home() {
                                 And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</span>
                         </div>
                         <div className='profile-options'>
-                            <Link to="/contactme"><button className='btn btn-lightdark'>contact Me</button></Link>
+                            <button className='btn btn-lightdark' onClick={()=>navigate('/contactme')}>contact Me</button>
                             <a href='#'><button className='btn btn-blue'>Get Resume</button></a>
                         </div>
                     </div>
-                    <img src={frontimg} alt="image" />
+                    <div className="img_section">
+                        <img className='frontimg' src={myimage} alt="me" />
+                        <img className='blob' src={svgbg} alt="blob" />
+                    </div>
                 </div>
             </div>
         <About />
