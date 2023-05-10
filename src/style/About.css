@@ -29,6 +29,7 @@
 }
 .img_section .sx2{
     bottom: 80%;
+    left: 1rem;
     width: 80%;
     animation: animate 4s linear infinite;
 
@@ -58,7 +59,7 @@
     }
     @keyframes animate {
         50%{
-            bottom: 85%;
+            left: 3rem;
         }
     }
     .Aboutpage{

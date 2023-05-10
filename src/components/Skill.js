@@ -1,18 +1,19 @@
 import React from 'react';
 import "../style/Skill.css";
 import Lang from './SkillLan';
+import Skill_item from './Skill_item';
 
 function Skill() {
 
 
 
     return (
-        <div className='skillcintainer'>
+        <div className='skill_container'>
             <h2 className='heading'>Skills</h2>
             <div className="wrapper">
                 {Lang.map((item, index)=>{
                     return(
-                        <button className='skillbtn' key={index} >{item}</button>
+                        <Skill_item key={index} lang={item} />
                     )
                 })}
             </div>

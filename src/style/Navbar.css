@@ -39,7 +39,7 @@
 .link{
     width: fit-content;
     color: aliceblue;
-    margin-right: 25px;
+    margin-right: 5px;
     text-decoration: none;
     transition: all 0.3s ease-in;
     padding: 10px;
@@ -48,7 +48,8 @@
 .active{
     border-bottom: 2px solid #0086fb;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 1px 0.5px 0.75px 0.5px #0086fb;
 }
 
 .link:hover {

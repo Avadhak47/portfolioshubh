@@ -13,6 +13,7 @@ const navlinks = [
     { title: "skills", path: "/skills" },
     { title: "Education", path: "/educationqualifications" },
     { title: "ContactMe", path: "/contactme" },
+    {title: "Services", path:"/services"},
     { title: "ProjectDetails", path: "/projectdetails" },
 ]
 
