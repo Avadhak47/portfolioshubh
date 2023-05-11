@@ -29,13 +29,13 @@
 }
 .img_section .sx2{
     bottom: 80%;
-    left: 1rem;
+    left: 0rem;
     width: 80%;
     animation: animate 4s linear infinite;
 
 }
 .img_section .sx1{
-    height: 33rem;
+    height: 34rem;
     width: 100%;
     animation: anini 4s linear infinite;
 }
@@ -47,19 +47,19 @@
 
 @media screen and (max-width: 700px) {
     .sx{
-        height: 25rem;
+        height: 23rem;
     }
     .img_section .sx1{
-        width: 365px;
+        width: 355px;
         height: 100%;
     }
     .img_section .sx2{
-        width: 350px;
+        width: 315px;
         bottom: 90%;
     }
     @keyframes animate {
         50%{
-            left: 3rem;
+            left: 2rem;
         }
     }
     .Aboutpage{
