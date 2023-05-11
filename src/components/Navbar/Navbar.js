@@ -38,16 +38,25 @@ function Navbar() {
     const openMobileMenu = () => {
         setmobileMenu(true);
         setshow("show");
-        console.log("hello");
     }
+
     const closemobileMenue = () => {
+        setmobileMenu(false);
+        setshow("hide");
+    }
+    const navigatepage =()=>{ // to move top when click on link and hide the mobile menue
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
         setmobileMenu(false);
         setshow("hide");
     }
 
     return (
         <div className='navbar'>
-            <Link to='/' className="navlogo">
+            <Link to='/' className="navlogo" onClick={navigatepage}>
                 <img src={icon} alt="namelogo" />
                 <h3>hubham Tanwar</h3>
             </Link>
@@ -56,7 +65,7 @@ function Navbar() {
 
             <div className={`navlinks ${show}`}>
                 {navlinks.map((val, index) => (
-                    <NavLink key={index} onClick={closemobileMenue} to={val.path} className="link">{val.title}</NavLink>
+                    <NavLink key={index} onClick={navigatepage} to={val.path} className="link">{val.title}</NavLink>
                 ))}
                 <div className="icon">
                     <a href="https://github.com/Shubh404-SE" target="blank"><GitHubIcon /></a>
