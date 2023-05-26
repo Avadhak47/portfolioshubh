@@ -9,7 +9,7 @@ function Education() {
         <div className='qualificationsection'>
             <h1>Education Qualifications</h1>
             <div className="institutes">
-                <div className="institute">
+                <div  className="institute">
                     <div className="institute_logo">
                         <img src={vidyabharti} alt="#" />
                         <p>2017-2018</p>
@@ -28,7 +28,7 @@ function Education() {
                         <img src={jnulogo} alt="#" />
                         <p>2020-Present</p>
                     </div>
-                    <p>Continueing my Graduation in B.TECH in computer science and engineering at SCHOOL OF ENGINEERING JNU DELHI with current SGPA of 7.0 with high knowledge and expreiencex </p>
+                    <p>Continueing my Graduation in B.TECH in computer science and engineering at SCHOOL OF ENGINEERING JNU DEHLI with current SGPA of 7.0 with high knowledge and expreiencex </p>
                 </div>
             </div>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Project(props) {
-    // console.log(props.imglink);
   return (
     <div className='project_container'>
       <a href={props.url}><img src={props.imglink} alt="img" /></a>

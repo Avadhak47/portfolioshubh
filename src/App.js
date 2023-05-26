@@ -4,6 +4,11 @@ import './components/Pages/Home/Home.css';
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
+
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Pages/Home/Home';
 import About from './components/Pages/About/About';
@@ -13,8 +18,13 @@ import Services from './components/Pages/Skill_Service/Services';
 import Education from './components/Pages/Education/Education';
 import Skill from './components/Pages/Skill_Service/Skill';
 import ProjectDetail from './components/Pages/Project/ProjectDetail';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(()=>{
+    Aos.init();
+  })
 
   
 
