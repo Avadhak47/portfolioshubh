@@ -11,6 +11,7 @@ import Education from '../Education/Education';
 import Skill from '../Skill_Service/Skill';
 import ProjectDetail from '../Project/ProjectDetail';
 
+
 function Home() {
     const navigate = useNavigate();
 

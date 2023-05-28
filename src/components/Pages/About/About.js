@@ -10,7 +10,7 @@ function About() {
     <>
       <div className='Aboutpage'>
         <div
-          data-aos="fade-left"
+          data-aos="fade-down-left"
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="500"

@@ -9,7 +9,8 @@ function ProjectDetail() {
       <h1 className='heading'>My Projects</h1>
       <div >
         {ProjectList.map((val, index) => {
-          return (<div className='projects'><Project imglink={val.img} url={val.url} key={index} /></div>)
+          return (<div data-aos="fade-up"
+     data-aos-duration="3000"      className='projects'><Project imglink={val.img} url={val.url} key={index} /></div>)
         })}
       </div>
       <hr />

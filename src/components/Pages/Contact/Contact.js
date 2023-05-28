@@ -16,7 +16,7 @@ function Contact() {
         emailjs.sendForm('service_dmh87do', 'template_t6u9039', form.current, 'l8CKqWZsVo7vYAaty')
             .then((result) => {
                 isaltr(true);
-                setTimeout(()=>{
+                setTimeout(() => {
                     isaltr(false);
                 }, 5000)
                 console.log("done");
@@ -27,8 +27,9 @@ function Contact() {
 
 
     return (
-        <div className='front contactbg'>
-            <div className='contact-text'>
+        <div data-aos="fade-up"
+            data-aos-duration="100" className='front contactbg'>
+            <div data-aos="zoom-out-up" className='contact-text'>
                 <h1>Contact Me</h1>
                 <p>For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email contact@domain.com</p>
             </div>
@@ -52,15 +53,19 @@ function Contact() {
                         <p>+911023456789</p>
                     </div>
                 </div> */}
-                <div className="formlayout">
-                {showaltr && <Alert alert={banner}/>}
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500" className="formlayout">
+                    {showaltr && <Alert alert={banner} />}
                     <div className="contenttext formtext">
                         <h2>Send message</h2>
                     </div>
                     {/* add a lable so that whenever a massage send  a banner showing your msg sent success..*/}
-                    <form ref={form} onSubmit={sendEmail}>
-                        <input type="text" name="Name" id="name" onChange={(e)=>setName(e.target.value)} value={clienName} placeholder='Your Name' />
-                        <input type="email" name="email" id="email" onChange={(e)=>setemail(e.target.value)} value={clientEmail} placeholder='Your E-Mail Address' />
+                    <form data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" ref={form} onSubmit={sendEmail}>
+                        <input type="text" name="Name" id="name" onChange={(e) => setName(e.target.value)} value={clienName} placeholder='Your Name' />
+                        <input type="email" name="email" id="email" onChange={(e) => setemail(e.target.value)} value={clientEmail} placeholder='Your E-Mail Address' />
                         <textarea name="message" id="message" cols="30" rows="10" placeholder='Your Message'></textarea>
                         <button type='submit' value='send' className="btn btn-lightdark">Send Message</button>
                     </form>

@@ -9,10 +9,11 @@ function Skill() {
 
     return (
         <div className='skill_container'>
-            <h2 className='heading'>Skills</h2>
+            <h2 data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" className='heading'>Skills</h2>
             <div className="wrapper">
-                {Lang.map((item, index)=>{
-                    return(
+                {Lang.map((item, index) => {
+                    return (
                         <Skill_item key={index} lang={item} />
                     )
                 })}

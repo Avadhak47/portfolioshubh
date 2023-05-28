@@ -7,26 +7,33 @@ import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstruct
 function Services() {
     return (
         <div className='outercontainer' >
-            <div className='service-outer-text'>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" 
+                className='service-outer-text'>
                 <h1>My Services</h1>
                 <p>I can help startups and companies with the following services.</p>
             </div>
             <div className="service-details">
-                <div className="service">
+                <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className="service">
                     <div className="iconlogo">
                         <DiamondIcon></DiamondIcon>
                     </div>
                     <h2>Web Design</h2>
                     <p>I strive for two things in design: simplicity and clarity. Great design is born of those two things.</p>
                 </div>
-                <div className="service">
+                <div data-aos="zoom-out-up" className="service">
                     <div className="iconlogo">
                         <LaptopIcon></LaptopIcon>
                     </div>
                     <h2>Web Developement</h2>
                     <p>Responsive Web design always plays a importent role when ever going to promote your website.</p>
                 </div>
-                <div className="service">
+                <div data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    className="service">
                     <div className="iconlogo">
                         <IntegrationInstructionsIcon></IntegrationInstructionsIcon>
                     </div>
@@ -34,7 +41,7 @@ function Services() {
                     <p>Your mind is programmable - if you are not programming your mind, else will programme it for you.</p>
                 </div>
             </div>
-            <div className='service-outer-text ' style={{marginBottom:"0rem"}}>
+            <div data-aos="zoom-in" className='service-outer-text ' style={{ marginBottom: "0rem" }}>
                 <h1>Why Work With Me?</h1>
                 <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well.</p>
             </div>
