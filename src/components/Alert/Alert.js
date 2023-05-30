@@ -1,10 +1,10 @@
 import "./Alert.css";
-export default function Alert(props) {
-    const [name, email] = props.alert;
+export default function Alert({alert, showaltr}) {
+    const [name, email] = alert;
     return (
         <div className="container" >
             <div className={`alert-success`} role="alert">
-                <strong>Sent </strong>: {name}, i will reply you on {email}. Hope Email is correct</div>
+                <strong style={{color:"blueviolet"}}> ***Message Sent*** </strong> <br /> Thanks to approach Me, {name}. <br /> ASAP I'll reply you on {email}.</div>
         </div>
 
     );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import frontimg from "../assestes/bglogo.png";
 import myimage from '../../../assestes/myphotoHome.png';
 import svgbg from '../../../assestes/blob (2).svg';
@@ -10,10 +10,15 @@ import Services from '../Skill_Service/Services';
 import Education from '../Education/Education';
 import Skill from '../Skill_Service/Skill';
 import ProjectDetail from '../Project/ProjectDetail';
+import Alert from '../../Alert/Alert';
 
 
 function Home() {
     const navigate = useNavigate();
+    const [clienName, setName] = useState("");
+    const [clientEmail, setemail] = useState("");
+    const [showaltr, isaltr] = useState(false);
+    const banner = [clienName, clientEmail];
 
     return (
         <>
@@ -52,12 +57,13 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Alert alert={banner} showaltr={showaltr} />
             <About />
             <Skill data-aos="zoom-in-down" />
             <Services />
             <ProjectDetail />
             <Education />
-            <Contact />
+            <Contact name={clienName} email={clientEmail} setName={setName} setEmail={setemail} showaltr={isaltr} />
         </>
     )
 }

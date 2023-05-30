@@ -1,13 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
-import Alert from '../../Alert/Alert';
+// import Alert from '../../Alert/Alert';
 
-function Contact() {
-    const [showaltr, isaltr] = useState(false);
-    const [clienName, setName] = useState("");
-    const [clientEmail, setemail] = useState("");
-    const banner = [clienName, clientEmail];
+function Contact({name, email, setName, setEmail, showaltr}) {
+    
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -15,9 +12,9 @@ function Contact() {
 
         emailjs.sendForm('service_dmh87do', 'template_t6u9039', form.current, 'l8CKqWZsVo7vYAaty')
             .then((result) => {
-                isaltr(true);
+                showaltr(true);
                 setTimeout(() => {
-                    isaltr(false);
+                    showaltr(false);
                 }, 5000)
                 console.log("done");
             }, (error) => {
@@ -57,16 +54,24 @@ function Contact() {
                     data-aos-anchor="#example-anchor"
                     data-aos-offset="500"
                     data-aos-duration="500" className="formlayout">
-                    {showaltr && <Alert alert={banner} />}
                     <div className="contenttext formtext">
                         <h2>Send message</h2>
                     </div>
                     {/* add a lable so that whenever a massage send  a banner showing your msg sent success..*/}
-                    <form data-aos="fade-up"
-                        data-aos-anchor-placement="top-center" ref={form} onSubmit={sendEmail}>
-                        <input type="text" name="Name" id="name" onChange={(e) => setName(e.target.value)} value={clienName} placeholder='Your Name' />
-                        <input type="email" name="email" id="email" onChange={(e) => setemail(e.target.value)} value={clientEmail} placeholder='Your E-Mail Address' />
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder='Your Message'></textarea>
+                    <form data-aos="fade-up" data-aos-anchor-placement="top-center" ref={form} onSubmit={sendEmail}>
+                        <div className='input-item'>
+                            <input type="text" name="Name" id="name" onChange={(e) => setName(e.target.value)} value={name} required />
+                            <label htmlFor="name">Name</label>
+                        </div>
+                        <div className='input-item'>
+                            
+                            <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)} value={email} required />
+                            <label htmlFor="email">Email</label>
+                        </div>
+                        <div className='input-item'>
+                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                            <label htmlFor="message">Write Your Message</label>
+                        </div>
                         <button type='submit' value='send' className="btn btn-lightdark">Send Message</button>
                     </form>
                 </div>
