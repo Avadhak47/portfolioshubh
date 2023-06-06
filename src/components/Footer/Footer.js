@@ -46,7 +46,7 @@ function Footer() {
                 </div>
                 <div className='copyrights'>
                     <h3>Thank You</h3>
-                    <h3>Copyright @ shubham</h3>
+                    <h3>Copyright @ Avadhesh</h3>
                 </div>
             </div>
             {/* <button onClick={scroller} className="btn"><KeyboardDoubleArrowUpIcon id="scroll-up" /></button> */}
